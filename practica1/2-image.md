@@ -74,7 +74,8 @@ Eliminar permanentemente la imagen de tu sistema Docker.
 docker rmi <nombre imagen>:<tag>
 ```
 
-Eliminar la imagen hello-world 
+Eliminar la imagen hello-world
+
 docker rmi hello-world:<tag>
 
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
