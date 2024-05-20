@@ -24,9 +24,11 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
+
 docker pull hello-world 
 
 **¿Qué es nginx**
+
 Nginx (pronunciado "engine-x") es un servidor web de código abierto y un proxy inverso de alto rendimiento. Es conocido por su eficiencia, estabilidad y escalabilidad, y es ampliamente utilizado para servir contenido web estático, manejar solicitudes HTTP y actuar como un proxy para aplicaciones web.
 
 Descargar la imagen  **nginx** en la versión **alpine**
@@ -65,6 +67,7 @@ docker images | grep <termino a buscar>
 ```
 
 ### Para eliminar una imagen
+
 Eliminar permanentemente la imagen de tu sistema Docker.
 
 ```
