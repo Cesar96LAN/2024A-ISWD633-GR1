@@ -25,7 +25,8 @@ docker ps -a
 ```
 docker start <nombre contenedor o identificador>
 ```
-Iniciar el contenedor srv-web 
+Iniciar el contenedor srv-web
+
 docker start srv-web
 
 ### Listar los contenedores ejecutándose
@@ -48,6 +49,7 @@ docker run --name <nombre contenedor> <nombre imagen>:<tag>
 ![Ecosistema de Docker](imagenes/dockerRun.PNG)
 
 Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen nginx:alpine
+
 docker run --name srv-web2 nginx:alpine
 
 **¿Qué sucede luego de la ejecución del comando?**
@@ -63,6 +65,7 @@ Cuando un contenedor se ejecuta en segundo plano, Docker devuelve el control al 
 docker run -d --name <nombre contenedor> <nombre imagen>:tag
 ```
 Crear y ejecutar inmediatamente el contenedor **srv-web3** en modo detach usando la imagen nginx:alpine
+
 docker run -d --name srv-web3 nginx:alpine
 
 ### Para eliminar un contenedor
@@ -71,9 +74,11 @@ docker run -d --name srv-web3 nginx:alpine
 docker rm <nombre contenedor>
 ```
 Eliminar el contenedor que se creó a partir de la imagen hello-world 
+
 docker rm hello-world 
 
 Verificar que el contenedor que se eliminó
+
 docker ps -a
 
 ### Para eliminar un contenedor que esté ejecutándose
@@ -81,13 +86,16 @@ docker ps -a
 ```
 docker rm -f <nombre contenedor>
 ```
-Eliminar el contenedor **srv-web3** 
+Eliminar el contenedor **srv-web3**
+
 docker rm -f srv-web3
 
 Verificar que el contenedor que se eliminó
+
 docker ps -a
 
 ### Para inspecionar un contenedor 
 
 Inspeccionar el contenedor **srv-web** 
+
 docker inspect srv-web
