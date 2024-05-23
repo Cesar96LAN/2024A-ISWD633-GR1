@@ -55,7 +55,8 @@ Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen ngin
 docker run --name srv-web2 nginx:alpine
 
 **¿Qué sucede luego de la ejecución del comando?**
-# COMPLETAR  
+
+Docker verifica la imagen crea el contenedor y asigna un nombre para luego ejecutar nginx
 
 Cuando ejecutas un contenedor en primer plano sin la opción -d (modo detach), el contenedor captura la entrada estándar (stdin) del terminal, lo que significa que el terminal queda "atrapado" y no puedes introducir más comandos hasta que detengas el contenedor.
 
