@@ -40,7 +40,6 @@ docker pull nginx:alpine
 ![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/4394ce53-5767-45bb-bfc7-8a3c5a6b91df)
 
 
-# COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
 
 **Identificadores**
 En Docker, se utilizan varios identificadores para diferenciar de manera única los elementos del sistema, como imágenes, contenedores, volúmenes y redes. Estos identificadores son generados automáticamente por Docker y son únicos dentro del contexto del sistema Docker en el que se encuentran. 
@@ -57,7 +56,10 @@ Inspeccionar la imagen hello-world
 docker inspect hello-world
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
-# COMPLETAR
+
+"Id": "sha256:d2c94e258dcb3c5ac2798d32e1249e42ef01cba4841c2234249495f87264ac5a",
+        "RepoTags": [
+            "hello-world:latest"
 
 ### Filtrar imágenes
 
