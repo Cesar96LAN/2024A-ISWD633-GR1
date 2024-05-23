@@ -37,12 +37,8 @@ docker pull nginx:alpine
 
 ### Listar imágenes
 
-```
-![Captura de pantalla 2024-05-23 095506.png](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/e839ec0d-4c1f-4d09-acdb-e56160efdaed)
+![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/4394ce53-5767-45bb-bfc7-8a3c5a6b91df)
 
-
-
-```
 
 # COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
 
