@@ -38,7 +38,8 @@ docker pull nginx:alpine
 ### Listar imágenes
 
 ```
-![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/d994d664-a3be-4961-a517-27cfb904e0e8) 
+![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/0f15d9a6-e7b8-447c-97fc-c36540c642d7)
+
 
 ```
 
