@@ -32,12 +32,14 @@ docker pull hello-world
 Nginx (pronunciado "engine-x") es un servidor web de código abierto y un proxy inverso de alto rendimiento. Es conocido por su eficiencia, estabilidad y escalabilidad, y es ampliamente utilizado para servir contenido web estático, manejar solicitudes HTTP y actuar como un proxy para aplicaciones web.
 
 Descargar la imagen  **nginx** en la versión **alpine**
-docker pull nginx>:alpine
+
+docker pull nginx:alpine
 
 ### Listar imágenes
 
 ```
-docker images
+![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/d994d664-a3be-4961-a517-27cfb904e0e8) 
+
 ```
 
 # COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
