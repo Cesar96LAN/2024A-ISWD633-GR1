@@ -22,6 +22,9 @@ docker run -d -p 8080:8080 -p 50000:50000 --name jenkins jenkins/jenkins:alpine3
 ![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/f75178d2-fc15-41b1-8491-fdb2fe9f4329)
 
 ### ¿Cómo obtener la contraseña solicitada?
+
+docker logs jenkins .......... te permite saber la contraseña directamente
+
 Para obtener la contraseña solicitada es necesario ingresar al contenedor.
 
 ![Imagen](imagenes/jenkins.PNG)
