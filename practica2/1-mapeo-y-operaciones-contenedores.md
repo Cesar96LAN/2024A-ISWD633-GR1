@@ -20,7 +20,7 @@ No puedes mapear puertos a un contenedor existente directamente después de su c
 
 docker run -P -d --name Jenkins -p 8080:5000 jenkins/jenkins:alpine3.18-jdk11
 
-# COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
+# CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
 ![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/f75178d2-fc15-41b1-8491-fdb2fe9f4329)
 
 ### ¿Cómo obtener la contraseña solicitada?
@@ -34,9 +34,11 @@ Para obtener la contraseña solicitada es necesario ingresar al contenedor.
 ```
 docker exec <nombre contenedor> <comando> <argumentos opcionales>
 ```
-# COMPLETAR
+
 ### ¿Para qué se usa el comando ls?
+El comando ls en sistemas Unix y Unix-like (como Linux) se utiliza para listar archivos y directorios en el directorio actual o en el directorio especificado como argumento. Muestra los nombres de los archivos y subdirectorios en una ubicación determinada.
 ### ¿Para qué sirve el argumento -l junto al comando ls?
+El argumento -l es una de las opciones que se pueden usar con el comando ls. Cuando se utiliza ls -l, en lugar de simplemente listar los nombres de los archivos y directorios, se produce una salida más detallada en forma de lista larga. Esta lista larga incluye información adicional sobre los archivos y directorios, como permisos, número de enlaces, propietario, grupo, tamaño, fecha y hora de modificación, entre otros detalles. Esta salida es útil para obtener una vista más completa de los archivos y directorios en un directorio específico.
 ### Usar el contenedor de jenkins creado previamente y ejecutar el comando ls con el argumento -l
 
 ![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/5be38c6d-4339-44f3-9f5e-b2210b55154d)
