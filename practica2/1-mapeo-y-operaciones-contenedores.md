@@ -9,8 +9,6 @@ docker run -d --name <nombre contenedor> --publish published=<valorPuertoHost>,t
 ```
 docker run -P -d --name <nombre contenedor> <nombre imagen>:<tag> 
 ```
-docker run -P -d --name alo nginx:alpine
-
 -P: le indica a Docker que asigne automáticamente puertos aleatorios en tu host para todos los puertos expuestos por el contenedor.
 
 **Recordar**
@@ -18,7 +16,7 @@ No puedes mapear puertos a un contenedor existente directamente después de su c
 
 ### Crear contenedor de Jenkins puertos contenedor: 8080 (interface web) y 50000 (comunicación entre nodos) imagen: jenkins/jenkins:alpine3.18-jdk11
 
-docker run -P -d --name Jenkins -p 8080:5000 jenkins/jenkins:alpine3.18-jdk11
+docker run -d -p 8080:8080 -p 50000:50000 --name jenkins jenkins/jenkins:alpine3.18-jdk11
 
 # CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
 ![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/f75178d2-fc15-41b1-8491-fdb2fe9f4329)
