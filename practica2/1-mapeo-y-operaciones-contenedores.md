@@ -98,10 +98,11 @@ docker exec -it <nombre contenedor> <programa o comando>
 ```
 
 ### Ahora puedes acceder al contenedor de jenkins y obtener la contraseña ubicada en /var/jenkins_home/secrets/initialAdminPassword
+![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/07f45002-927e-491a-ad05-8548ebde3ab5)
 
-# COMPLETAR
 
-### Colocar una captura de pantalla de la ventana que aparece después de colocar la contraseña.
+### Captura de pantalla de la ventana que aparece después de colocar la contraseña.
+
 
 **Para este punto no es necesario continuar con la instalación de Jenkins**
 
