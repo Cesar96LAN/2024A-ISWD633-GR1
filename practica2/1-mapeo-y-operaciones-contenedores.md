@@ -20,6 +20,8 @@ docker run -d -p 8080:8080 -p 50000:50000 --name jenkins jenkins/jenkins:alpine3
 
 # CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
 
+![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/c3e8e845-c5ec-453d-8fd6-6ab450f6e9fa)
+
 
 ### ¿Cómo obtener la contraseña solicitada?
 
