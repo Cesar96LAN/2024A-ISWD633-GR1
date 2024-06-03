@@ -21,16 +21,20 @@ docker run -d --name main -e username=cesar96lan -e role=admin nginx:alpine
 
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos
-# COMPLETAR
+
+docker run -d --name main -p 3306:3306 -e MYSQL_ROOT_PASSWORD=rootpassword -e MYSQL_DATABASE=mydatabase -e MYSQL_USER=myuser -e MYSQL_PASSWORD=mypassword mysql:8
+
 
 ### ¿El contenedor se está ejecutando?
-# COMPLETAR
+no
 
 ### Identificar el problema
-# COMPLETAR
+Problemas con las variables de entorno
 
 ### Eliminar el contenedor creado con mysql:8 
-# COMPLETAR
+
+docker stop main
+
 
 ### Para crear un contenedor con variables de entorno especificadas
 - Portabilidad: Las aplicaciones se vuelven más portátiles y pueden ser desplegadas en diferentes entornos (desarrollo, pruebas, producción) simplemente cambiando el archivo de variables de entorno.
@@ -47,7 +51,8 @@ docker run -d --name <nombre contenedor> --env-file=<nombreArchivo>.<extensión>
 Es necesario especificar la ruta absoluta del archivo si este se encuentra en una ubicación diferente a la que estás ejecutando el comando docker run.
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos y configurar las variables de entorno mediante un archivo
-# COMPLETAR
+
+docker run -d --name main --env-file="D:\DOCUMENTOS EPN\6. SEXTO SEMESTRE\CONSTRUCCION Y EVOLUCION DE SOFTWARE\Práctica 2\variables.txt" -p 3306:3306 mysql:8
 
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
 
