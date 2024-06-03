@@ -32,7 +32,7 @@ CREATE TABLE personas (
 );
 
 -- Agregar registros
-INSERT INTO personas (nombre) VALUES ('Cesar');
+INSERT INTO personas (nombre) VALUES ('Juan'),('María'),('Cesar');
 
 
 ## Desde el servidor postgresl
@@ -48,3 +48,4 @@ psql -U postgres
 
 ### Realizar un select *from personas
 # CAPTURA DE PANTALLA DEL RESULTADO
+![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/34b4297a-b137-45f2-b038-97eed96a09f5)
