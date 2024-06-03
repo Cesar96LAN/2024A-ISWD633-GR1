@@ -56,5 +56,13 @@ docker run -d --name main --env-file="D:\DOCUMENTOS EPN\6. SEXTO SEMESTRE\CONSTR
 
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
 
+![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/8861f569-4764-40aa-9bf2-a8ed6a2c7999)
+
+
 ### ¿Qué bases de datos existen en el contenedor creado?
-# COMPLETAR
+
+information_schema: Esta base de datos contiene metadatos sobre las bases de datos y las tablas del servidor MySQL.
+
+performance_schema: Esta base de datos contiene instrumentación de rendimiento interna de MySQL.
+
+sys: Esta base de datos contiene vistas que muestran información del sistema utilizando el sistema de rendimiento.
