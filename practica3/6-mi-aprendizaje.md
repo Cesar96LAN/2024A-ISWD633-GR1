@@ -1,3 +1,4 @@
-# COMPLETAR  
-Comparando sus conocimientos antes de hacer la práctica con sus conocimientos después de hacer la tarea, explicar los principales aprendizajes logrados para beneficio de su formación profesional.  
-Si solucionó un problema presentado al realizar la práctica también se debe documentar.
+Una vez aprendido el tema de volúmenes en Docker puedo implementar los siguientes apartados:
+Los volúmenes permiten almacenar datos de manera persistente, asegurando que no se pierdan cuando un contenedor se detiene o se elimina, tambien facilitan el intercambio y la colaboración entre múltiples contenedores permitiendo que varios servicios accedan a los mismos datos.
+Los volúmenes están diseñados para proporcionar un rendimiento superior en comparación con los sistemas de archivos montados desde el host, los respaldo y restauración son más sencillos y efectivos.
+Por último son independiente del ciclo de vida de los contenedores, lo que permite una mayor flexibilidad y control sobre los datos, por ende los datos pueden ser compartidos sin depender de la existencia o configuración específica de un contenedor en particular.
