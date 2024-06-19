@@ -51,13 +51,17 @@ La opción -t se utiliza para etiquetar la imagen que se está construyendo con 
  
 ### Ejecutar el archivo Dockerfile y construir una imagen en la versión 1.0
 ```
+docker build -t nombre_imagen:1.0 -f Dockerfile .
 
 ```
 
 **¿Cuántos pasos se han ejecutado?**
 
+16 pasos
+
 ### Inspeccionar la imagen creada
-# COMPLETAR CON UNA CAPTURA
+
+https://github.com/Cesar96LAN/2024A-ISWD633-GR1/blob/main/Practica4/imagenes/imagen1.png?raw=true
 
 **Modificar el archivo index.html para incluir su nombre**
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
@@ -72,27 +76,31 @@ Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso
 
 ### Crear un contenedor a partir de las imagen creada, mapear todos los puertos
 ```
+docker run -d --name my-centos -P centos:2.0
 
 ```
 
 ### ¿Con que puerto host se está realizando el mapeo?
-# COMPLETAR CON LA RESPUESTA
+32768
 
 **¿Qué es una imagen huérfana?**
-# COMPLETAR CON LA RESPUESTA
+Una imagen huérfana en Docker es una imagen que no está asociada a ningún contenedor, es decir, es una imagen que no tiene ningún contenedor basado en ella en ejecución o detenido. Estas imágenes suelen ocupar espacio en tu sistema y pueden acumularse con el tiempo si no se gestionan adecuadamente.
 
 ### Identificar imágenes huérfanas
 ```
+docker images -f dangling=true
 
 ```
 
 ### Listar los IDS de las imágenes huérfanas
 ```
+docker images -f dangling=true -q
 
 ```
 
 ### Eliminar imágenes huérfanas
 ```
+docker rmi $(docker images -f dangling=true -q)
 
 ```
 
