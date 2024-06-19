@@ -61,7 +61,8 @@ docker build -t nombre_imagen:1.0 -f Dockerfile .
 
 ### Inspeccionar la imagen creada
 
-https://github.com/Cesar96LAN/2024A-ISWD633-GR1/blob/main/Practica4/imagenes/imagen1.png?raw=true
+![image](https://github.com/Cesar96LAN/2024A-ISWD633-GR1/assets/119013340/c3611b85-f553-412f-8ab0-57f27ad3bd8c)
+
 
 **Modificar el archivo index.html para incluir su nombre**
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
