@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  mysql-service:
+    image: mysql:8.4
+    container_name: <valor>
+    environment:
+      MYSQL_ROOT_PASSWORD: <valor>
+      MYSQL_DATABASE: <valor>
+      MYSQL_USER: <valor>
+      MYSQL_PASSWORD: <valor>
+    volumes:
+      - <valor>:<valor>
+    networks:
+      - <valor>
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 20s
+      timeout: 20s
+      retries: 10
+      start_period: 30s
+
+  wordpress-service:
+    image: wordpress:6
+    container_name: <valor>
+    ports:
+      - <valor>:<valor>
+    environment:
+      WORDPRESS_DB_HOST: <valor>
+      WORDPRESS_DB_USER: <valor>
+      WORDPRESS_DB_PASSWORD: <valor>
+      WORDPRESS_DB_NAME: <valor>
+    volumes:
+      - <valor>:<valor>
+    networks:
+      - <valor>
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 20s
+      timeout: 20s
+      retries: 10
+      start_period: 50s
+    restart: <valor>
+    depends_on:
+      mysql-service:
+        condition: <valor>
+volumes:
+  mysql-data:
+  wordpress-vol:
+
+networks:
+  net-wp:
+    driver: bridge
